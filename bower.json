@@ -1,0 +1,21 @@
+{
+  "name": "express-mysql",
+  "description": "mysql connect test",
+  "main": "",
+  "authors": [
+    "scott xiong"
+  ],
+  "license": "MIT",
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap": "^4.0.0",
+    "jquery": "^3.2.1"
+  }
+}

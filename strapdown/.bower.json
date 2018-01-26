@@ -1,0 +1,12 @@
+{
+  "name": "strapdown",
+  "_cacheHeaders": {
+    "Content-Length": "525",
+    "Content-Type": "text/javascript"
+  },
+  "main": "index.js",
+  "_source": "http://strapdownjs.com/v/0.2/strapdown.js",
+  "_target": "*",
+  "_originalSource": "http://strapdownjs.com/v/0.2/strapdown.js",
+  "_direct": true
+}

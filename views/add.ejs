@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>ADD</title>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+    <link rel="stylesheet" type="text/css" href="/bootstrap/css/bootstrap.css">  
+   </head>
+  <body>
+    
+
+    <div class="container">
+        <div class="row">
+            <li class="col-md-2">
+               <a href="/">首页</a>
+            </li>
+            <li class="col-md-2">
+              <a href="/find">详情页</a>
+           </li>
+           <li class="col-md-2"> 
+              <a href="/add">add</a>
+             </li>
+             <li class="col-md-2">
+               <a href="/remove">remove</a>
+            </li class="col-md-2">
+            <li>
+                <a href="/update">update</a>
+            </li>
+        </div>
+        <hr>
+        <div class="body">
+            <form action="/add" method="post">
+                标题:<input type="text" name="heading"><br>
+                标签:<input type="text"  name="tag"><br>
+                作者:<input type="text" name="who"><br>
+                <h3>  文案：</h3>
+                <div>
+                  <textarea name="content" id="" cols="80" rows="20" style="border: 1px solid #ccc;"></textarea>
+                </div>
+                <input type="submit" value="确认添加">
+            </form>
+        </div>
+    </div>
+        <style type="text/css">
+      input{
+        width: 45%;
+        margin-bottom: 5px;
+      }
+      textarea{
+        background: red;
+      }
+    </style>
+
+  </body>
+</html>

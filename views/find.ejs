@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>FIND</title>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+    <script type="text/javascript" src="/bower_components/jquery/dist/jquery.js"></script>
+    <link rel="stylesheet" type="text/css" href="/bootstrap/css/bootstrap.css">
+    <script type="text/javascript" src="/bootstrap/js/bootstrap.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.4.0/languages/go.min.js"></script>
+    <style type="text/css"></style>
+  </head>
+  <body>
+    <div class="container">
+        <div class="row">
+            <li class="col-md-2">
+               <a href="/">首页</a>
+            </li>
+            <li class="col-md-2">
+              <a href="/find">详情页</a>
+           </li>
+           <li class="col-md-2"> 
+              <a href="/add">add</a>
+             </li>
+             <li class="col-md-2">
+               <a href="/remove">remove</a>
+            </li class="col-md-2">
+            <li>
+                <a href="/update">update</a>
+            </li>
+        </div>
+        <div class="body">
+          <div class="list-group">
+              <li  class="list-group-item list-group-item-danger">Detail List</li>
+              <% result.forEach(i=>{ %>
+              <% var src='/images/'+i.n+'.bmp'%>
+              <li href="#" class="list-group-item " style="font-size: 14px;">
+              <h5><img src=<%= src %>> <%= i.heading%></h5>
+              <div style="font-size: 12px;">
+                   <p style="font-size: 14px;"><%= i.content%></p></span><br><span style="margin-right: 0px;font-size: 10px;color:#f60;" class="glyphicon glyphicon-user">&nbsp;</span><%= i.who%>&nbsp;&nbsp;&nbsp; <span class="glyphicon glyphicon-time" style="color:green;"></span>&nbsp;<%= i.creat_time%>&nbsp;&nbsp;&nbsp;<span class="glyphicon glyphicon-apple badge">&nbsp;<%=i.tag%></span></li>
+                  <%})%>
+              </div>
+           </div> 
+           <!--  <%= JSON.stringify(result) %> -->
+        </div>
+    </div>
+  </body>
+</html>
